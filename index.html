@@ -15,7 +15,7 @@ nav button{background:none;border:0;color:var(--mut);cursor:pointer;font:inherit
 nav button.on{color:var(--ac);background:var(--c2)}
 nav i{font-style:normal}
 @media(min-width:800px){nav{top:0;right:0;bottom:0;width:190px;flex-direction:column;padding:12px 6px}main{margin-right:190px}}
-@media(max-width:799px){nav{bottom:0;left:0;right:0;overflow-x:auto;justify-content:flex-start;padding-bottom:env(safe-area-inset-bottom);-webkit-overflow-scrolling:touch}nav button{flex:0 0 auto;min-width:64px;flex-direction:column;gap:0;font-size:.65rem;padding:6px 8px;white-space:nowrap;align-items:center}nav i{font-size:1.2rem}main{padding:12px 12px calc(130px + env(safe-area-inset-bottom))}.row button{flex:1 1 auto}.opt{padding:10px}h1{font-size:1.5rem}#intro{overflow-y:auto;align-items:flex-start}#intro .box{margin:auto;padding:20px 14px}}
+@media(max-width:799px){nav{position:sticky;top:0;left:0;right:0;overflow-x:auto;justify-content:flex-start;-webkit-overflow-scrolling:touch;border-width:0 0 1px 0;border-radius:0}nav button{flex:0 0 auto;min-width:64px;flex-direction:column;gap:0;font-size:.65rem;padding:6px 8px;white-space:nowrap;align-items:center}nav i{font-size:1.2rem}#app main{padding:12px 12px 90px}.row button{flex:1 1 auto}.opt{padding:10px}h1{font-size:1.5rem}#intro{overflow-y:auto;align-items:flex-start}#intro .box{margin:auto;padding:20px 14px}}
 main{padding:16px;max-width:900px}
 .card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:14px;margin:10px 0}
 .tp{cursor:pointer}.tp:hover{border-color:var(--ac)}
