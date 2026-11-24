@@ -2,20 +2,20 @@
 <html lang="ar" dir="rtl" data-t="dark">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>منصة فاطمة للدراسة</title>
 <style>
 :root{--bg:#0b1016;--card:#141c26;--c2:#1a2532;--ac:#39d3c0;--tx:#e6edf3;--mut:#8b9bb0;--ok:#2ecc8f;--bad:#ef6b6b;--bd:#26344a}
 [data-t=light]{--bg:#f2f6f8;--card:#fff;--c2:#e8eff3;--ac:#0f9d8c;--tx:#14202b;--mut:#5a6b7d;--bd:#d3dde4}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,"Segoe UI",Tahoma,sans-serif;line-height:1.6}
+html,body{overflow-x:hidden}body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,"Segoe UI",Tahoma,sans-serif;line-height:1.6}
 #app{display:none;min-height:100vh}
 nav{position:fixed;z-index:5;background:var(--card);display:flex;border:1px solid var(--bd)}
 nav button{background:none;border:0;color:var(--mut);cursor:pointer;font:inherit;display:flex;align-items:center;gap:8px;padding:10px}
 nav button.on{color:var(--ac);background:var(--c2)}
 nav i{font-style:normal}
 @media(min-width:800px){nav{top:0;right:0;bottom:0;width:190px;flex-direction:column;padding:12px 6px}main{margin-right:190px}}
-@media(max-width:799px){nav{bottom:0;left:0;right:0;overflow-x:auto;justify-content:space-around}nav button{flex-direction:column;gap:0;font-size:.62rem;padding:6px 8px}nav i{font-size:1.2rem}main{padding-bottom:80px}}
+@media(max-width:799px){nav{bottom:0;left:0;right:0;overflow-x:auto;justify-content:flex-start;padding-bottom:env(safe-area-inset-bottom);-webkit-overflow-scrolling:touch}nav button{flex:0 0 auto;min-width:64px;flex-direction:column;gap:0;font-size:.65rem;padding:6px 8px;white-space:nowrap;align-items:center}nav i{font-size:1.2rem}main{padding:12px 12px calc(130px + env(safe-area-inset-bottom))}.row button{flex:1 1 auto}.opt{padding:10px}h1{font-size:1.5rem}#intro{overflow-y:auto;align-items:flex-start}#intro .box{margin:auto;padding:20px 14px}}
 main{padding:16px;max-width:900px}
 .card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:14px;margin:10px 0}
 .tp{cursor:pointer}.tp:hover{border-color:var(--ac)}
